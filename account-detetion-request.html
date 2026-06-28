@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Deletion Request</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    label {
+      font-size: 14px;
+      color: #555;
+    }
+    input, textarea, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      width: 100%;
+    }
+    button {
+      background: #007acc;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rate Book</h1>
+  <h1>Account Deletion Request</h1>
+  <p>Please fill out the form below to request account deletion.</p>
+
+  <!-- Replace YOUR_FORM_ID with your real Formspree ID -->
+  <form action="https://formspree.io/f/xwpnebpp" method="POST">
+    <label>
+      Your Email
+      <input type="email" name="email" required>
+    </label>
+    <label>
+      Reason:
+      <textarea name="message" placeholder="Write your reason here..." required></textarea>
+    </label>
+    <button type="submit">Submit Request</button>
+  </form>
+</body>
+</html>
